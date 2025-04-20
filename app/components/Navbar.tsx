@@ -16,10 +16,10 @@ const Navbar = () => {
             <p className={`text-3xl font-bold italic ${PlaywriteAUSA.className}`} >I-Power Projects</p>
         </div>
         <div className='flex gap-5 w-fit '>
-            <Link href={'#'}> Home </Link>
-            <Link href={'#'}> About Us </Link>
-            <Link href={'#'}> Our Services </Link>
-            <Link href={'#'}> Contact Us </Link>
+            <Link href={'#'} className='hover:scale-125 transition-all ease-in-out duration-300'> Home </Link>
+            <Link href={'#'} className='hover:scale-125 transition-all ease-in-out duration-300'> About Us </Link>
+            <Link href={'#'} className='hover:scale-125 transition-all ease-in-out duration-300'> Our Services </Link>
+            <Link href={'#'} className='hover:scale-125 transition-all ease-in-out duration-300'> Contact Us </Link>
         </div>
     </div>
   )

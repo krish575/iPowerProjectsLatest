@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { sendEmail } from './SendEmail';
 
@@ -14,13 +14,21 @@ export type FormData = {
 
 const ContactUs  = () => {
   const { register, handleSubmit } = useForm<FormData>();
-
+  const [WaitingState, setWaitingState] = useState(false)
+  console.log(WaitingState)
   function onSubmit(data: FormData) {
-    sendEmail(data);
+    console.log(data);
+    sendEmail(data , setWaitingState);
   }
 
   return (
-    <form className='w-fit m-auto flex flex-col gap-7' onSubmit={handleSubmit(onSubmit)}>
+    <div className='mt-32'>
+    <div>
+        <p className='text-3xl text-center font-bold text-[#283040]'>Contact Us</p>
+        
+        <hr className='border-2 text-[#283040] m-auto w-[16%]'></hr>
+        </div>
+    <form className='w-[50%] m-auto flex flex-col gap-7 mt-10' onSubmit={handleSubmit(onSubmit)}>
       <div className=''>
         <label
           htmlFor='name'
@@ -93,11 +101,13 @@ const ContactUs  = () => {
         </div>
 
       <div>
-        <button className='hover:shadow-form w-full rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+      <p className='text-xl text-center font-bold text-[#283040]'>Note: Phone calls will only be accepted between Between 9:00am to 7:00pm</p>
+        <button onClick={() => setWaitingState(true)}   className={` ${WaitingState ? "bg-red-600" : "bg-blue-600"} hover:shadow-form w-full rounded-md  py-3 px-8 text-base font-semibold text-white outline-none`}>
           Submit
         </button>
       </div>
     </form>
+    </div>
   );
 };
 
