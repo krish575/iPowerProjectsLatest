@@ -1,6 +1,6 @@
 import { FormData } from '@/app/components/ContactUs';
 
-export function sendEmail(data: FormData) {
+export function sendEmail(data: FormData , setWaitingState: React.Dispatch<React.SetStateAction<boolean>>) {
   const apiEndpoint = '/api/email';
 
   fetch(apiEndpoint, {
@@ -13,5 +13,9 @@ export function sendEmail(data: FormData) {
     })
     .catch((err) => {
       alert(err);
+    })
+    .finally(() => {
+      // Hide loading
+      setWaitingState(false);
     });
 }
