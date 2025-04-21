@@ -1,16 +1,19 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { ScrollArea } from "@/components/ui/scroll-area"
 import WP from '@/Resources/whatsapp.svg';
-import FB from '@/Resources/facebook.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='w-full h-[60%] p-16 text-white bg-[#283040] gap-5 flex flex-col justify-center items-center '> 
+    <div className='w-full h-[60%] p-16 max-md:p-5 text-white bg-[#283040] gap-5 flex  justify-between items-center max-md:flex-col'> 
+    
     <Dialog>
+        <div>
+    <p>© 2025. All Copyrights reserved.</p>
     <DialogTrigger className='cursor-pointer underline underline-offset-2'>Privacy Policy</DialogTrigger>
+    </div>
     <DialogContent>
       <DialogHeader>
         <DialogTitle className='text-3xl text-left'>  Our Privacy Policy:  </DialogTitle>
@@ -58,12 +61,18 @@ To exercise any of these rights, please contact us at [contact information]. </p
       </DialogHeader>
     </DialogContent>
   </Dialog>
-  <div className='flex'> <Link href={'https://wa.me/9723503320?text='}>
+  <div className='flex flex-col gap-2'>
+    <div>
+    <p className='text-3xl'>Owned & Operated by:</p>
+    <p className='text-2xl'>Trunal Patel</p>
+    </div>
+  <div className='flex '> <Link href={'https://wa.me/9723503320?text='}>
+  <div className='flex justify-center items-center gap-1 bg-[#52BA63] p-3  rounded-2xl'>
             <Image src={WP} alt='WP' width={500} height={500} className='w-full h-full' />
+            <div className='flex flex-col'> <p className='text-sm text-nowrap'>Click here to contact us directly on</p> <p className='text-2xl'>WhatsApp</p> </div>
+            </div>
             </Link>
-            <Link href={'#'}>
-            <Image src={FB} alt='FB' width={500} height={500} className='w-full h-full' />
-            </Link>
+            </div>
             </div> </div>
   )
 }

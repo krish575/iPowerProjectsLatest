@@ -17,7 +17,7 @@ const AboutUs = () => {
           transition={{ ease: "easeInOut", duration: 1 }}>
         <div className='flex flex-col gap-y-10 bg-[#f5efdf] p-10 max-md:p-5 rounded-3xl'>
             <div className='bg-[#283040] text-[#fffbec] py-1 px-3 rounded-xl w-fit'>About us</div>
-            <div className='leading-5 '>This website is developed as part of diploma, Degree, Master degree all branch project to demonstrate the practical application of the skills and knowledge. The primary objective of this website is to showcase how modern web technologies can be used to solve real-world problems and create interactive, user-friendly digital experiences.
+            <div className='leading-5 text-justify'>This website is developed as part of diploma, Degree, Master degree all branch project to demonstrate the practical application of the skills and knowledge. The primary objective of this website is to showcase how modern web technologies can be used to solve real-world problems and create interactive, user-friendly digital experiences.
 This website integrates key concepts such as responsive design, dynamic content, user interaction, and backend functionalities, reflecting a complete development process from planning and design to implementation and testing. 
 Engineering students are continually in search of innovative projects, and identifying impactful projects significantly enhances their educational journey. I Power Projects serves as the perfect platform for such initiatives.
 Find out all the project Ideas for Final year Engineering projects for Diploma, Degree Engineering, M.E & M Tech students.

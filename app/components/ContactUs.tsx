@@ -80,7 +80,7 @@ const ContactUs  = () => {
         </label>
         <input
           type='text'
-          placeholder='IT/CE/Mechanical/Civil'
+          placeholder='IT/CE/EE/Mechanical/Civil'
           className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none  focus:shadow-md'
           {...register('Branch', { required: true })}
         />

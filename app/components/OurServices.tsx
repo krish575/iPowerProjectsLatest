@@ -47,7 +47,7 @@ const OurServices = () => {
   whileInView={{ opacity: 1 }}
   transition={{ ease: "easeInOut", duration: 1 }} className='flex flex-col justify-center py-2 bg-[#d5efc0] text-[#283040] rounded-3xl px-6 shadow-2xl'> 
             <p className='text-3xl text-right'>	Research</p>
-            <p className='text-sm text-right opacity-85'> and paper work  </p>    
+            <p className='text-sm text-right opacity-85'> paper work  </p>    
         </motion.div>
         <motion.div initial={{ opacity: 0, x:-100 }}
   whileInView={{ opacity: 1, x:0 }}
