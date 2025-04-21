@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.10",
+    "@radix-ui/react-scroll-area": "^1.2.5",
     "@radix-ui/react-slot": "^1.2.0",
     "@types/nodemailer": "^6.4.17",
     "class-variance-authority": "^0.7.1",

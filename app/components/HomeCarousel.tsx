@@ -29,52 +29,52 @@ const HomeCarousel = () => {
     Autoplay({ delay: 1500, stopOnInteraction: true })
   )
   return (
-    <div className="grid grid-cols-2 p-10 h-screen ">
-      <div className="w-[75%] mx-auto ">
+    <div id="HomeCarousel" className="grid grid-cols-2 p-10  max-lg:p-0 max-xl:p-10 w-full max-md:p-3 max-md:py-10 max-md:gap-3 max-md:grid-cols-1 max-md:mx-auto gap-3">
+      <div className="w-[75%] mx-auto max-xl:w-[90%] ">
       <Carousel orientation="vertical"   
    plugins={[plugin2.current]} >
-        <CarouselContent className="h-[565px]">
-          <CarouselItem className='  ' >
-            <Image className='aspect-square   rounded-3xl object-contain mx-auto' src={Img6} alt="1" width={1000} height={1000} />
+        <CarouselContent className="h-[565px] max-lg:h-[380px] max-xl:h-[450px]">
+          <CarouselItem className=' w-fit h-fit  ' >
+            <Image className='aspect-square    object-contain mx-auto' src={Img6} alt="1" width={1000} height={1000} />
           </CarouselItem >
-          <CarouselItem className='  '>
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img7} alt="2" width={1000} height={1000} /> 
+          <CarouselItem className=' w-fit h-fit  '>
+            <Image className='aspect-square   object-contain mx-auto' src={Img7} alt="2" width={1000} height={1000} /> 
           </CarouselItem>
-          <CarouselItem className='  '>
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img8} alt="3" width={1000} height={1000} /> 
+          <CarouselItem className=' w-fit h-fit  '>
+            <Image className='aspect-square   object-contain mx-auto' src={Img8} alt="3" width={1000} height={1000} /> 
           </CarouselItem>
-          <CarouselItem className='   ' >
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img9} alt="1" width={1000} height={1000} />
+          <CarouselItem className='  w-fit h-fit  ' >
+            <Image className='aspect-square   object-contain mx-auto' src={Img9} alt="1" width={1000} height={1000} />
           </CarouselItem >
-          <CarouselItem className='   ' >
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img10} alt="1" width={1000} height={1000} />
+          <CarouselItem className=' w-fit h-fit   ' >
+            <Image className='aspect-square   object-contain mx-auto' src={Img10} alt="1" width={1000} height={1000} />
           </CarouselItem >
         </CarouselContent>
-        <CarouselPrevious className='bg-white ' />
-        <CarouselNext className='bg-white' />
+        <CarouselPrevious className='bg-white max-lg:hidden' />
+        <CarouselNext className='bg-white max-lg:hidden' />
       </Carousel>
       </div>
-    <div className="w-[75%] mx-auto">
+    <div className="w-[75%] mx-auto max-xl:w-[90%]">
       <Carousel  plugins={[plugin.current]} >
-        <CarouselContent className="h-[565px]">
-          <CarouselItem className='  ' >
-            <Image className='aspect-square   rounded-3xl object-contain mx-auto' src={Img1} alt="1" width={1000} height={1000} />
+        <CarouselContent className="h-[565px] max-lg:h-[380px] max-xl:h-[450px]">
+          <CarouselItem className=' w-fit h-fit ' >
+            <Image className='aspect-square    object-contain mx-auto' src={Img1} alt="1" width={1000} height={1000} />
           </CarouselItem >
-          <CarouselItem className=' '>
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img2} alt="2" width={1000} height={1000} /> 
+          <CarouselItem className='w-fit h-fit  '>
+            <Image className='aspect-square   object-contain mx-auto' src={Img2} alt="2" width={1000} height={1000} /> 
           </CarouselItem>
-          <CarouselItem className=' '>
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img3} alt="3" width={1000} height={1000} /> 
+          <CarouselItem className=' w-fit h-fit '>
+            <Image className='aspect-square   object-contain mx-auto' src={Img3} alt="3" width={1000} height={1000} /> 
           </CarouselItem>
-          <CarouselItem className='  ' >
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img4} alt="1" width={1000} height={1000} />
+          <CarouselItem className=' w-fit h-fit  ' >
+            <Image className='aspect-square   object-contain mx-auto' src={Img4} alt="1" width={1000} height={1000} />
           </CarouselItem >
-          <CarouselItem className='  ' >
-            <Image className='aspect-square  rounded-3xl object-contain mx-auto' src={Img5} alt="1" width={1000} height={1000} />
+          <CarouselItem className=' w-fit h-fit  ' >
+            <Image className='aspect-square   object-contain mx-auto' src={Img5} alt="1" width={1000} height={1000} />
           </CarouselItem >
         </CarouselContent>
-        <CarouselPrevious className='bg-white ' />
-        <CarouselNext className='bg-white' />
+        <CarouselPrevious className='bg-white max-lg:hidden' />
+        <CarouselNext className='bg-white max-lg:hidden' />
       </Carousel>
     </div>
     </div>
