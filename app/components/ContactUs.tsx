@@ -15,7 +15,6 @@ export type FormData = {
 const ContactUs  = () => {
   const { register, handleSubmit } = useForm<FormData>();
   const [WaitingState, setWaitingState] = useState(false)
-  console.log(WaitingState)
   function onSubmit(data: FormData) {
     console.log(data);
     sendEmail(data , setWaitingState);
