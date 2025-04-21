@@ -4,10 +4,10 @@ import { motion } from "framer-motion"
 
 const OurServices = () => {
   return (
-    <div id='OurWork' className='mt-28 scroll-smooth'>
-        <p className='text-3xl text-center font-bold text-[#283040]'>Our Services</p>
+    <div id='OurServices' className='scroll-smooth '>
+        <p className='text-3xl  text-center font-bold text-[#283040]'>Our Services</p>
         <hr className='border-2 text-[#283040] m-auto w-[10%]'></hr>
-    <div className='grid grid-cols-2 w-[50%] mx-auto gap-x-2 gap-y-6 mt-14 mb-10'>
+    <div className='grid grid-cols-2 w-[50%] mx-auto gap-x-2 gap-y-6 mt-14 mb-10 max-xl:w-[90%]'>
         
         
         <motion.div initial={{ opacity: 0, x:100 }}

@@ -22,13 +22,13 @@ const ContactUs  = () => {
   }
 
   return (
-    <div className='mt-32'>
+    <div id='ContactUs' className=''>
     <div>
         <p className='text-3xl text-center font-bold text-[#283040]'>Contact Us</p>
         
-        <hr className='border-2 text-[#283040] m-auto w-[16%]'></hr>
+        <hr className='border-2 text-[#283040] m-auto w-[8%]'></hr>
         </div>
-    <form className='w-[50%] m-auto flex flex-col gap-7 mt-10' onSubmit={handleSubmit(onSubmit)}>
+    <form className='w-[50%] max-lg:w-[90%] m-auto flex flex-col gap-7 mt-10' onSubmit={handleSubmit(onSubmit)}>
       <div className=''>
         <label
           htmlFor='name'
@@ -39,7 +39,7 @@ const ContactUs  = () => {
         <input
           type='text'
           placeholder='Full Name'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none  focus:shadow-md'
           {...register('name', { required: true })}
         />
       </div>
@@ -53,7 +53,7 @@ const ContactUs  = () => {
         <input
           type='email'
           placeholder='example@domain.com'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none  focus:shadow-md'
           {...register('email', { required: true })}
         />
       </div>
@@ -66,7 +66,7 @@ const ContactUs  = () => {
         </label>
         <input
           type='number'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none  focus:shadow-md'
           {...register('Cnumber', { required: true })}
         />
       </div>
@@ -81,7 +81,7 @@ const ContactUs  = () => {
         <input
           type='text'
           placeholder='IT/CE/Mechanical/Civil'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none  focus:shadow-md'
           {...register('Branch', { required: true })}
         />
       </div>
@@ -95,7 +95,7 @@ const ContactUs  = () => {
         <textarea
           rows={4}
           placeholder='Type your message'
-          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none  focus:shadow-md'
           {...register('message', { required: true })}
         ></textarea>
         </div>
