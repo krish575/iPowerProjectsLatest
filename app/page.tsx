@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HomeCarousel from "./components/HomeCarousel";
 import Navbar from "./components/Navbar";
 import OurServices from "./components/OurServices";
+import OurWork from "./components/OurWork";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar/>
       <HomeCarousel/>
       <AboutUs/>
+      <OurWork/>
       <OurServices/>
       <ContactUs/>
       <Footer/>

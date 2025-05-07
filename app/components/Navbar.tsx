@@ -19,6 +19,7 @@ const Navbar = () => {
             <Link href={'#HomeCarousel'} className='hover:scale-125 transition-all ease-in-out duration-300'> Home </Link>
             <Link href={'#AboutUs'} className='hover:scale-125 transition-all ease-in-out duration-300'> About Us </Link>
             <Link href={'#OurServices'} className='hover:scale-125 transition-all ease-in-out duration-300'> Our Services </Link>
+            <Link href={'#ProjectList'} className='hover:scale-125 transition-all ease-in-out duration-300'> Project List </Link>
             <Link href={'#ContactUs'} className='hover:scale-125 transition-all ease-in-out duration-300'> Contact Us </Link>
         </div>
     </div>
