@@ -30,7 +30,7 @@ Thank you for visiting, and I hope you find the project informative and engaging
           transition={{ ease: "easeInOut", duration: 1 }} >
         <div className='grid grid-rows-3 gap-y-3 max-md:w-full'> 
             <div className='bg-[#f5f5bc]  flex flex-col text-[#283040] py-3 px-8 rounded-full items-center justify-center' >
-                <p className='text-6xl'>500+</p><p>Projects created and sold</p>
+                <p className='text-6xl'>500+</p><p>Projects created</p>
             </div>
             <div className='bg-[#d5efc0]  flex flex-col text-[#283040] py-3 px-8 rounded-full items-center justify-center' >
                 <p className='text-6xl'>1000+</p><p>Students are connected with us</p>
