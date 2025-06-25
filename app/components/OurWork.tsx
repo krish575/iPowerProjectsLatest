@@ -5,7 +5,7 @@ const OurWork = () => {
   return (
     <div id='ProjectList' className=' mx-auto w-[90%]'>
         <div>
-            <p className='text-3xl text-center font-bold text-[#283040]'>Project List</p>
+            <p className='text-3xl text-center font-bold text-[#283040]'>Projects List</p>
             <hr className='border-2 text-[#283040] m-auto w-[8%]'></hr>
         </div>
         <div>

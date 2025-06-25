@@ -25,7 +25,7 @@ const OurServices = () => {
   whileInView={{ opacity: 1 }}
   transition={{ ease: "easeInOut", duration: 1 }} className='flex flex-col justify-center py-2 bg-[#d5efc0] text-[#283040] rounded-3xl px-6 shadow-2xl'> 
             <p className='text-3xl text-right'>Working Model </p>
-            <p className='text-sm text-right opacity-85'> with Report PDF</p>    
+            <p className='text-sm text-right opacity-85'> With Report PDF</p>    
         </motion.div>
         <motion.div initial={{ opacity: 0, x:-100 }}
   whileInView={{ opacity: 1, x:0 }}
@@ -39,7 +39,7 @@ const OurServices = () => {
   whileInView={{ opacity: 1 }}
   transition={{ ease: "easeInOut", duration: 1 }} className='flex flex-col justify-center py-2 bg-[#ffd8b3] text-[#283040] rounded-3xl px-6 shadow-2xl'> 
             <p className='text-3xl text-left'>	Master degree </p>
-            <p className='text-sm text-left opacity-85'>thesis work</p>    
+            <p className='text-sm text-left opacity-85'>Thesis work</p>    
         </motion.div>
 
 
@@ -47,7 +47,7 @@ const OurServices = () => {
   whileInView={{ opacity: 1 }}
   transition={{ ease: "easeInOut", duration: 1 }} className='flex flex-col justify-center py-2 bg-[#d5efc0] text-[#283040] rounded-3xl px-6 shadow-2xl'> 
             <p className='text-3xl text-right'>	Research</p>
-            <p className='text-sm text-right opacity-85'> paper work  </p>    
+            <p className='text-sm text-right opacity-85'> Paper work  </p>    
         </motion.div>
         <motion.div initial={{ opacity: 0, x:-100 }}
   whileInView={{ opacity: 1, x:0 }}
@@ -61,7 +61,7 @@ const OurServices = () => {
   whileInView={{ opacity: 1}}
   transition={{ ease: "easeInOut", duration: 1 }} className='flex flex-col justify-center py-2 bg-[#f5f5bc] text-[#283040] rounded-3xl px-6 shadow-2xl'> 
             <p className='text-3xl text-left'>	Guidance</p>
-            <p className='text-sm text-left opacity-85'>and consultancy </p>    
+            <p className='text-sm text-left opacity-85'>And Consultancy </p>    
         </motion.div>
          
     </div>
